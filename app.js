@@ -108,7 +108,7 @@ $(document).ready(function() {
 
 //Previous and Next Button functionality
 var current_fs, next_fs, previous_fs; //fieldsets
-var left, opacity, scale; //fieldset properties which we will animate
+var left, opacity, scale; //fieldset properties to animate
 var animating; //flag to prevent quick multi-click glitches
 
 $(".next").click(function(){
