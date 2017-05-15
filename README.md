@@ -8,6 +8,6 @@ Needed JS Libraries:
 
 https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js
 
-//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js
+https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js
 
 Working copy can be found here: http://codepen.io/CThePants/full/YVxGMp/
