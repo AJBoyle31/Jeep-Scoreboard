@@ -1,0 +1,260 @@
+<html>
+  <div class="grid-header">
+  <div id="header-logo">
+    <a href="http://www.cjponyparts.com" title="CJ Pony Parts" class="logo" target="_blank">
+    <img id="logo" src="http://www.cjponyparts.com/skin/frontend/cj-pony/default/images/cjponyparts-offroad-parts.png"></a>
+</div>
+  </div>
+  
+  <h1 class="title">The Jeep Score Calculator</h1>
+  <h2 class="title">Find where you rank in the Jeep Wave Hierarchy</h2>
+<form id="msform">
+  <ul id="progressbar">
+    <li class="active">Select Your Vehicle</li>
+    <li>Vehicle Condition</li>
+    <li>Engine</li>
+    <li>Tires</li>
+    <li>Drivetrain</li>
+    <li>Suspension</li>
+    <li>Winch</li>
+    <li>Nerf Bars</li>
+    <li>Other Accessories</li>
+    <li>Battle Scars</li>
+    <li>Your Score</li>
+  </ul>
+
+  <fieldset>
+    <h2 class="fs-title">Select Your Vehicle</h2>
+    <select id="mainCategorySelection" class="selection">
+      <option value=0 selected="selected">Please select one</option>
+      <option value=30>Pre-CJ</option>
+      <option value=27>Pre-AMC CJ</option>
+      <option value=25>Other CJ</option>
+      <option value=20>Commando</option>
+      <option value=16>YJ</option>
+      <option value=15>TJ</option>
+      <option value=15>JK</option>
+      <option value=10>Cherokee</option>
+      <option value=10>Wagoneer</option>
+      <option value=5>All Other Jeeps</option>
+      <option value=0>All Other Vehicles</options>
+    </select>
+    <input type="button" name="next" class="next action-button" value="Next" />
+  </fieldset>
+
+  <fieldset>
+    <h2 class="fs-title">Vehicle Condition</h2>
+    <select id="subCategorySelection" class="selection">
+    <option value=0 selected="selected">Please select one</option>
+    <option value=30>Top off; Vehicle, driver and all occupants covered with mud</option>
+    <option value=20>To partially off; Vehicle and some occupants covered with mud</option>
+    <option value=10>Top on; vehicle covered with mud</option>
+    <option value=5>Top off during snow, sleet, hail or heavy rain</option>
+    <option value=0>Somewhat dirty</option>
+    <option value=-10>Obviously recently washed, but immediately re-muddied a little</option>
+    <option value=-30>Clean, dry, unscratched, untested</option>
+  </select>
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="next" class="next action-button" value="Next" />
+  </fieldset>
+
+  <fieldset>
+    <h2 class="fs-title">Engine</h2>
+    <select id="engineCategorySelection" class="selection">
+    <option value=0 selected="selected">Please select one</option>
+    <option value=2>Stock, Pre-CJ, working condition</option>
+    <option value=2>Stock, 8-cyl</option>
+    <option value=1>Stock, 6-cyl</option>
+    <option value=0>Stock, 4-cyl</option>
+    <option value=3>Replaced, 8-cyl</option>
+    <option value=2>Replaced, 6-cyl (replacing 4-cyl)</option>
+    <option value=0>Replaced, 6-cyl (replacing 6-cyl)</option>
+    <option value=-1>Replaced, 6-cyl (replacing 8-cyl)</option>
+    <option value=-1>Replaced, 4-cyl</option>
+  </select>
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="next" class="next action-button" value="Next" />
+  </fieldset>
+
+  <fieldset>
+    <h2 class="fs-title">Tires</h2>
+    <select id="tiresCategorySelection" class="selection">
+    <option value=0 selected="selected">Please select one</option>
+    <option value=0>Stock or unremarkable</option>
+    <option value=2>Original tires on Pre-CJ</option>
+    <option value=1>Slightly oversized (up to 31")</option>
+    <option value=2>Over 31", with other appropriate mods</option>
+    <option value=2>Any size, currently covered with mud</option>
+    <option value=-2>Working tires > 31" with original donut spare</option>
+    <option value=-10>Low-profile</option>
+  </select>
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="next" class="next action-button" value="Next" />
+  </fieldset>
+
+  <fieldset class="notDropDowns">
+    <h2 class="fs-title">Drivetrain Mods</h2>
+    <div class="textLeft">
+      <label><input type="checkbox" name="choice" class="drivetrain" value=3/> Upgraded transmission: NV4500 or Turbo400</label><br/>
+      <label><input type="checkbox" name="choice" class="drivetrain" value=2/> Upgraded transmission: all other</label><br/>
+      <label><input type="checkbox" name="choice" class="drivetrain" value=2/> Upgraded transfer case </label><br/>
+      <label><input type="checkbox" name="choice" class="drivetrain" value=3/> Stone stock in a pre-1970 vehicle </label><br/>
+      <label><input type="checkbox" name="choice" class="drivetrain" value=2/> All comfort enhancements removed for more power </label><br/>
+      <label>How many improved internal mechanical parts (crank/cam/etc): <input type="number" name="amountTwo" class="drivetrain" value="0"/> </label><br/>
+      <!-- 2 points for each -->
+      <label>How many improved exterior mechanical parts (headers/manifolds/pumps/filters/etc): <input type='number' name='amountOne' class="drivetrain" value="0"/></label><br/>
+      <!-- 1 point for each -->
+    </div>
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="next" class="next action-button" value="Next" />
+  </fieldset>
+
+  <fieldset class="notDropDowns">
+    <h2 class="fs-title">Suspension</h2>
+    <div class="textLeft">
+      <label><input type="checkbox" name="choice"  value=2> Stock, Pre-CJ</label><br/>
+      <label><input type="checkbox" name="choice"  value=3> Spring-over lift</label><br/>
+      <label><input type="checkbox" name="choice"  value=2> High-quality shocks</label><br/>
+      <label><input type="checkbox" name="choice"  value=-20> Lowered</label><br/>
+      <label>Body lift (in inches): <input type="number" name="amountOne" value="0"></label><br/>
+      <!-- 1 point for each -->
+      <label>Suspension lift (in inches): <input type="number" name="amountTwo" value="0"></label><br/>
+      <!-- 2 points for each -->
+    </div>
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="next" class="next action-button" value="Next" />
+  </fieldset>
+
+  <fieldset>
+    <h2 class="fs-title">Winch</h2>
+    <select id="winchCategorySelection" class="selection">
+    <option value=0 selected="selected">Please select one</option>
+    <option value=2>Winch, heavy-duty, obviously used</option>
+    <option value=1>Winch, heavy-duty, use unclear</option>
+    <option value=1>Other winch, obviously used</option>
+    <option value=-1>Little, chrome-covered, toy winch</option>
+    <option value=0>No winch</option>
+  </select>
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="next" class="next action-button" value="Next" />
+  </fieldset>
+
+  <fieldset>
+    <h2 class="fs-title">Nerf Bars</h2>
+    <select id="nerfbarsCategorySelection" class="selection">
+    <option value=0 selected="selected">Please select one</option>
+    <option value=2>Nerf bars/Rock rails, used and scarred</option>
+    <option value=-1>Nerf bars, shiny, no scars</option>
+    <option value=0>No Nerf bars</option>
+  </select>
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="next" class="next action-button" value="Next" />
+  </fieldset>
+
+  <fieldset class="notDropDowns">
+    <h2 class="fs-title">Other Accessories</h2>
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="next" class="next action-button" value="Next" />
+    <div class="textLeft">
+    <label><input type="checkbox" name="choice" class="accessories" value=2> Lockers</label><br/>
+    <label><input type="checkbox" name="choice" class="accessories" value=1> Upgraded axles</label><br/>
+    <label><input type="checkbox" name="choice" class="accessories" value=1> Upgraded transfer case</label><br/>
+    <label><input type="checkbox" name="choice" class="accessories" value=1> Fire extinguishers</label><br/>
+    <label><input type="checkbox" name="choice" class="accessories" value=2> Block and Tackle, anchors, etc</label><br/>
+    <label><input type="checkbox" name="choice" class="accessories" value=1> Ropes, straps, tow chains</label><br/>
+    <label><input type="checkbox" name="choice" class="accessories" value=1> Tow Hooks</label><br/>
+    <label><input type="checkbox" name="choice" class="accessories" value=1> Heavy duty bash/skid plates</label><br/>
+    <label><input type="checkbox" name="choice" class="accessories" value=2> Other protective plating, scarred</label><br/>
+    <label><input type="checkbox" name="choice" class="accessories" value=-2> Other protective plating, unscarred</label><br/>
+    <label><input type="checkbox" name="choice" class="accessories" value=1> Extra fuel tanks/oversize fuel tanks</label><br/>
+    <label><input type="checkbox" name="choice" class="accessories" value=1> External gear carrying rack</label><br/>
+    <label><input type="checkbox" name="choice" class="accessories" value=-1> Multi-disc CD player</label><br/>
+    <label><input type="checkbox" name="choice" class="accessories" value=1> First aid kit</label><br/>
+    <label><input type="checkbox" name="choice" class="accessories" value=2> Backpack, food, emergency gear</label><br/>
+    <label><input type="checkbox" name="choice" class="accessories" value=1> On-board air compressor</label><br/>
+    <label><input type="checkbox" name="choice" class="accessories" value=2> On-board welder</label><br/>
+    <label><input type="checkbox" name="choice" class="accessories" value=-1> Girly, shiny chrome center caps</label><br/>
+    <label><input type="checkbox" name="choice" class="accessories" value=1> Krylon home-made paint job</label><br/>
+    <label><input type="checkbox" name="choice" class="accessories" value=-1> Blackout headlight covers</label><br/>
+    <label><input type="checkbox" name="choice" class="accessories" value=-1> Any little flippy interior vanity mirrors</label><br/>
+    <label><input type="checkbox" name="choice" class="accessories" value=-2> Stickers advertising for other than 4wd-related businesses</label><br/>
+    <label><input type="checkbox" name="choice" class="accessories" value=-5> "No Fear" sticker</label><br/>
+    <label><input type="checkbox" name="choice" class="accessories" value=3> Correct mental attitude, seen or proven</label><br/>
+    <label><input type="checkbox" name="choice" class="accessories" value=1> Windshield down</label><br/>
+    <label><input type="checkbox" name="choice" class="accessories" value=2> Windshield down and raining or snowing</label><br/>
+    <label><input type="checkbox" name="choice" class="accessories" value=1> Bugs left on face/teeth from recent windshield down driving</label><br/>
+    <label><input type="checkbox" name="choice" class="accessories" value=1> CB radio or other communication tool</label><br/>
+    <label><input type="checkbox" name="choice" class="accessories" value=2> Hi-lift jack</label><br/>
+    <label><input type="checkbox" name="choice" class="accessories" value=2> Flexible caulking to fill leaks and body damage</label><br/>
+    <label><input type="checkbox" name="choice" class="accessories" value=1> Dogs as passengers, properly secured</label><br/>
+    <label><input type="checkbox" name="choice" class="accessories" value=5> Bringing a new Jeeper into the family</label><br/>
+    <label><input type="checkbox" name="choice" class="accessories" value=1> Homemade roll bar pads</label><br/>
+    <label><input type="checkbox" name="choice" class="accessories" value=-2> Top on and windows up, warm day</label><br/>
+    <label><input type="checkbox" name="choice" class="accessories" value=1> Gernade hood ornament</label><br/>
+    <label><input type="checkbox" name="choice" class="accessories" value=1> PA, used to harass drivers of lesser vehicles</label><br/>
+    <label><input type="checkbox" name="choice" class="accessories" value=1> Storage boxes from solid steel or ammo cans</label><br/>
+    <label><input type="checkbox" name="choice" class="accessories" value=1> Waving while fighting older Jeep's natural urge to wander</label><br/>
+    <label><input type="checkbox" name="choice" class="accessories" value=-1> Plastic headlight covers/accessories</label><br/>
+    <label><input type="checkbox" name="choice" class="accessories" value=2> Snorkel gear, functional</label><br/>
+    <label>Each chrome accessory currently shiny: <input type="number" name="amountNegOne" class="accessories" value="0"></label><br/>
+    <!-- -1 for each-->
+    <label>Each neon accessory: <input type="number" name="amountNegTwo" class="accessories" value="0"></label><br/>
+    <!-- -2 for each -->
+    <label>Number of subwoofers if more than one: <input type="number" name="amountNegOne" class="accessories" value="0"></label><br/>
+    <!-- -1 for each -->
+    <label>Number of earned trip stickers/badges: <input type="number" name="amountOne" class="accessories" value="0"></label><br/>
+    <!-- +1 for each -->
+    <label>Number of unearnded trip stickers/badges: <input type="number" name="amountNegTwo" class="accessories" value="0"></label><br/>
+    <!-- -2 for each -->
+    <label>Number of extra lighting, used for night-wheeling: <input type="number" name="amountOne" class="accessories" value="0"></label><br/>
+    <!-- +1 for each -->
+    <label>Yards of Duct Tape currently in use: <input type="number" name="amountOne" class="accessories" value="0"></label><br/>
+    <!-- +1 per yard-->
+    <label>Number of rolls of Duct Tape in reserve: <input type="number" name="amountOne" class="accessories" value="0" size="1"></label><br/>
+    <!-- +1 per roll -->
+    </div>
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="next" class="next action-button" value="Next" />
+  </fieldset>
+
+
+  <fieldset class="notDropDowns">
+    <h2 class="fs-title">Battle Scars</h2>
+    <div class="textLeft">
+    <label><input type="checkbox" name="choice" class="battlescars" value=3> Mashed hood, top, etc. Obviously from roll-over</label><br/>
+    <label><input type="checkbox" name="choice" class="battlescars" value=3> Holes above glove box where passenger ripped grab-bar out</label><br/>
+    <label><input type="checkbox" name="choice" class="battlescars" value=2> Heavily gouged rocker panels</label><br/>
+    <label><input type="checkbox" name="choice" class="battlescars" value=2> Bloody seats</label><br/>
+    <label><input type="checkbox" name="choice" class="battlescars" value=2> V-bent front bumper from being pulled out of that one</label><br/>
+    <label><input type="checkbox" name="choice" class="battlescars" value=1> Scarred sides from those mis-judged rocks</label><br/>
+    <label><input type="checkbox" name="choice" class="battlescars" value=-1> Any small parking lot dent/scratch still identifiable</label><br/>
+    <label><input type="checkbox" name="choice" class="battlescars" value=1> Other accessories bent, folded, mangled or mutilated</label><br/>
+    <label><input type="checkbox" name="choice" class="battlescars" value=-3> No scars whatsoever</label><br/>
+    <label><input type="checkbox" name="choice" class="battlescars" value=3> No scars whatsoever but is Pre-CJ restored</label><br/>
+    <label><input type="checkbox" name="choice" class="battlescars" value=-5> New body due to rust only</label><br/>
+    <label><input type="checkbox" name="choice" class="battlescars" value=2> Fire damage (bubbled paint, singed seats, etc)</label><br/>
+    <label><input type="checkbox" name="choice" class="battlescars" value=1> Any rescue in the Jeeps past requiring the use of snowmobiles</label><br/>
+    <label><input type="checkbox" name="choice" class="battlescars" value=2> Any rescue in the Jeeps past requiring the use of boats</label><br/>
+    <label><input type="checkbox" name="choice" class="battlescars" value=2> Any rescue in the Jeeps past requiring use of tracked vehicles</label><br/>
+    <label><input type="checkbox" name="choice" class="battlescars" value=1> Scars on the driver and are Jeep related</label><br/>
+    <label>How many tree limbs or shrubs are attached well enough to remain at highway speeds: <input type="number" class="battlescars" name="amountOne" value="0"></label><br/>
+    <label>Each Jeep rescue performed: <input type="number" class="battlescars" name="amountOne" value="0"></label><br/>
+    </div>
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="next" class="next action-button" value="Next" />
+  </fieldset>
+
+  <fieldset>
+    <h2 class="fs-title">Your Score</h2>
+    <h3 id="score"></h3>
+    <h3 id="jeepTitle"></h3>
+    <img id="resultPic" src="" />
+    <p id="explanation"></p>
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <a href="#" target="_blank" class="twitter action-button">Tweet it</a>
+    
+  </fieldset>
+
+</form>
+
+</html>
