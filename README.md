@@ -10,4 +10,4 @@ https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js
 
 https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js
 
-Working copy can be found here: http://codepen.io/CThePants/full/YVxGMp/
+Working copy can be found here: https://www.cjponyparts.com/resources/jeep-wave-calculator
